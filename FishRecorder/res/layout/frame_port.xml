@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/editText_port_name_cn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/port_frame_hint_cn"
+        android:inputType="textPersonName" >
+ 		<requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editText_port_name_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_port_name_cn"
+        android:layout_below="@+id/editText_port_name_cn"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/port_frame_hint_cn"
+        android:inputType="textPersonName" />
+
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_add"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_alignRight="@+id/editText_port_name_en"
+        android:text="@string/button_clear" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_is_default"
+        android:layout_below="@+id/checkBox_is_default"
+        android:layout_marginTop="19dp"
+        android:text="@string/button_add" />
+    
+    <CheckBox
+        android:id="@+id/checkBox_is_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_port_name_en"
+        android:layout_below="@+id/editText_port_name_en"
+        android:layout_marginTop="14dp"
+        android:text="@string/port_frame_hint_is_default" />
+
+</RelativeLayout>

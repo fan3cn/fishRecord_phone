@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rowshadow" >
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/company_frame_hint_name"
+            android:textSize="18sp"
+            android:textStyle="normal" />     
+
+        <TextView
+            android:id="@+id/company_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_name"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:maxLines="5"
+            android:text="@string/company_frame_hint_tel"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/company_fax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_phone"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:maxLines="5"
+            android:text="@string/company_frame_hint_fax"
+            android:textSize="18sp" />        
+
+        <TextView
+            android:id="@+id/company_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_fax"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:maxLines="5"
+            android:text="@string/company_frame_hint_email"
+            android:textSize="18sp" />    
+            
+        <TextView
+            android:id="@+id/company_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_email"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:maxLines="5"
+            android:text="@string/company_frame_hint_address"
+            android:textSize="18sp" />    
+
+        <TextView
+            android:id="@+id/company_is_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_address"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:maxLines="5"
+            android:text="@string/company_frame_is_default"
+            android:textSize="18sp" />          
+              
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/company_phone"
+            android:layout_alignTop="@+id/company_name"
+            android:src="@drawable/abs__ic_menu_moreoverflow_normal_holo_light" />
+
+    </RelativeLayout>
+
+</LinearLayout>

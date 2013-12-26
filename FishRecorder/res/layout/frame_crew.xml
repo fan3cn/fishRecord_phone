@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+        
+    <EditText
+        android:id="@+id/editText_crew_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/crew_frame_hint_ship_name"
+        android:focusable="false"
+        android:inputType="textPersonName" >
+        <requestFocus />
+	</EditText>
+        
+    <EditText
+        android:id="@+id/editText_crew_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/editText_crew_ship"
+        android:layout_below="@+id/editText_crew_ship"
+        android:ems="10"
+        android:hint="@string/crew_frame_hint_name"
+        android:inputType="textPersonName" >
+        <requestFocus />
+	</EditText>
+ 
+    <TextView
+        android:id="@+id/labelSpinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignLeft="@+id/editText_crew_name"
+        android:layout_below="@+id/editText_crew_name"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="船员职位:" />
+    
+    <Spinner
+        android:id="@+id/spinner1"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+    	android:layout_below="@+id/labelSpinner1"
+    	android:layout_alignLeft="@+id/labelSpinner1"
+        android:ems="10"
+        android:hint="@string/crew_frame_hint_position"
+		android:entries="@array/crew_position"        
+        />    
+<!--     <Spinner -->
+<!--         android:id="@+id/spinner1" -->
+<!-- 		android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content"  -->
+<!--         android:layout_marginTop="20dp" -->
+<!--     	android:layout_below="@+id/editText_crew_name" -->
+<!--     	android:layout_toRightOf = "@+id/labelSpinner1" -->
+<!--         android:ems="10" -->
+<!--         android:hint="@string/crew_frame_hint_position" -->
+<!-- 		android:entries="@array/crew_position"         -->
+<!--         />     -->
+    
+
+    <EditText
+        android:id="@+id/editText_crew_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/crew_frame_hint_phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText_crew_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_crew_phone"
+        android:layout_below="@+id/editText_crew_phone"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/crew_frame_hint_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_crew_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_crew_email"
+        android:layout_below="@+id/editText_crew_email"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/crew_frame_hint_addr"
+        android:inputType="textPersonName" />
+
+
+    
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_add"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_alignRight="@+id/editText_crew_addr"
+        android:text="@string/button_clear" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_crew_addr"
+        android:layout_below="@+id/editText_crew_addr"
+        android:layout_marginTop="19dp"
+        android:text="@string/button_add" />
+
+</RelativeLayout>
+ 
+ 
+ </ScrollView>
+

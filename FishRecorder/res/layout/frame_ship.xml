@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/editText_ship_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_name"
+        android:inputType="textPersonName" />
+    
+    <EditText
+        android:id="@+id/editText_ship_nation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_name"
+        android:layout_below="@+id/editText_ship_name"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_nation"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_ship_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_nation"
+        android:layout_below="@+id/editText_ship_nation"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_register"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText_ship_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_register"
+        android:layout_below="@+id/editText_ship_register"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_ship_ffa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_email"
+        android:layout_below="@+id/editText_ship_email"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_ffa"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_ship_wcpfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_ffa"
+        android:layout_below="@+id/editText_ship_ffa"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_wcpfc"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_ship_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_wcpfc"
+        android:layout_below="@+id/editText_ship_wcpfc"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_radio"
+        android:inputType="textPersonName" />
+ 
+    <EditText
+        android:id="@+id/editText_ship_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_radio"
+        android:layout_below="@+id/editText_ship_radio"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ship_frame_hint_license"
+        android:inputType="textPersonName" />
+    
+    <CheckBox
+        android:id="@+id/checkBox_is_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_ship_license"
+        android:layout_below="@+id/editText_ship_license"
+        android:layout_marginTop="14dp"
+        android:text="@string/ship_frame_is_default" />
+    
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_add"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_alignRight="@+id/editText_ship_license"
+        android:text="@string/button_clear" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_is_default"
+        android:layout_below="@+id/checkBox_is_default"
+        android:layout_marginTop="19dp"
+        android:text="@string/button_add" />
+
+</RelativeLayout>
+ 
+ 
+ </ScrollView>
+

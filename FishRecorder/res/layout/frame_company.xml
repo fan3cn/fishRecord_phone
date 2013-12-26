@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/editText_com_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/company_frame_hint_name"
+        android:inputType="textPersonName" >
+ 		<requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editText_com_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_com_name"
+        android:layout_below="@+id/editText_com_name"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/company_frame_hint_tel"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText_com_fax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_com_phone"
+        android:layout_below="@+id/editText_com_phone"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/company_frame_hint_fax"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editText_com_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_com_fax"
+        android:layout_below="@+id/editText_com_fax"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/company_frame_hint_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_com_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_com_email"
+        android:layout_below="@+id/editText_com_email"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/company_frame_hint_address"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_add"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_alignRight="@+id/editText_com_addr"
+        android:text="@string/button_clear" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_is_default"
+        android:layout_below="@+id/checkBox_is_default"
+        android:layout_marginTop="19dp"
+        android:text="@string/button_add" />
+
+    <CheckBox
+        android:id="@+id/checkBox_is_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_com_addr"
+        android:layout_below="@+id/editText_com_addr"
+        android:layout_marginTop="14dp"
+        android:text="@string/company_frame_is_default" />
+
+</RelativeLayout>

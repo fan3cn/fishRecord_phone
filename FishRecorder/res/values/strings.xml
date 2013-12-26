@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FishRecoder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+    
+    <string name="inline_preferences">In-line preferences</string>
+    <string name="dialog_based_preferences">Dialog-based preferences</string>
+    <string name="launch_preferences">Launch preferences</string>
+    <string name="preference_attributes">Preference attributes</string>
+
+    <string name="title_checkbox_preference">Checkbox preference</string>
+    <string name="summary_checkbox_preference">This is a checkbox</string>
+
+    <string name="title_edittext_preference">Edit text preference</string>
+    <string name="summary_edittext_preference">An example that uses an edit text dialog</string>
+    <string name="dialog_title_edittext_preference">Enter your favorite animal</string>
+
+    <string name="title_list_preference">List preference</string>
+    <string name="summary_list_preference">An example that uses a list dialog</string>
+    <string name="dialog_title_list_preference">Choose one</string>
+
+    <string name="title_intent_preference">Intent preference</string>
+    <string name="summary_intent_preference">Launches an Activity from an Intent</string>
+
+    <string name="title_my_preference">My preference</string>
+    <string name="summary_my_preference">This is a custom counter preference</string>
+
+    <string name="title_advanced_toggle_preference">Haunted preference</string>
+    <string name="summary_on_advanced_toggle_preference">I\'m on! :)</string>
+    <string name="summary_off_advanced_toggle_preference">I\'m off! :(</string>
+
+    <string name="title_parent_preference">Parent checkbox preference</string>
+    <string name="summary_parent_preference">This is visually a parent</string>
+    <string name="title_child_preference">Child checkbox preference</string>
+    <string name="summary_child_preference">This is visually a child</string>
+
+    <string name="example_preference_dependency">Example preference dependency</string>
+    <string name="title_wifi">WiFi</string>
+    <string name="title_wifi_settings">WiFi settings</string>
+
+    <string name="default_value_list_preference">beta</string>
+    <string name="default_value_edittext_preference">Default value</string>
+    
+    <string name="userName">张三</string>
+    <string name="company">公司设置</string>
+    <string name="boat">渔船设置</string>
+    <string name="settings">设置</string>
+    
+	<color name="bgCval">#f2f2f2</color>
+    <color name="bmPri">#8cc63f</color>
+    <color name="bmSec">#b6d886</color>
+    <color name="bmText">#000</color>
+    <color name="bmBg">#f2f2f2</color>
+    <color name="meGreyBg">#555</color>
+    <color name="meLightFg">#FFF</color>
+    <color name="meLightFgG">#d3d3d3</color>    
+
+    
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    
+<!--     quickActionItem菜单 -->
+    <string name="action_item_menu_delete">删除</string>
+    <string name="action_item_menu_modify">修改</string>
+    <string name="action_item_menu_default">设为默认</string>
+<!--     fragment 按钮 -->
+    <string name="button_add">添加</string>
+    <string name="button_modify">修改</string>
+    <string name="button_clear">清除</string>
+<!--     公司信息 -->
+    <string name="company_frame_hint_name">公司名称</string>
+    <string name="company_frame_hint_tel">电话号码</string>
+    <string name="company_frame_hint_fax">传真号码</string>
+    <string name="company_frame_hint_email">email</string>
+    <string name="company_frame_hint_address">公司地址</string>
+    <string name="company_frame_is_default">是否为默认公司</string>
+    
+    <string name="search_dialog_ship_name">渔船</string>
+    <string name="search_dialog_start_time">开始时间</string>
+    <string name="search_dialog_end_time">结束时间</string>
+    
+<!--     渔船信息 -->
+    <string name="ship_frame_hint_name">渔船名称</string>
+    <string name="ship_frame_hint_nation">注册国籍</string>
+    <string name="ship_frame_hint_register">船籍国际注册编号</string>
+    <string name="ship_frame_hint_email">Email</string>
+    <string name="ship_frame_hint_ffa">FFA注册编号</string>
+    <string name="ship_frame_hint_wcpfc">WCPFC识别编号</string>
+    <string name="ship_frame_hint_radio">无线电国籍呼号</string>
+    <string name="ship_frame_hint_license">渔业许可证</string>
+    <string name="ship_frame_is_default">是否为默认渔船</string>
+
+<!--     船员信息 -->
+    <string name="crew_frame_hint_ship_name">所属渔船</string>
+    <string name="crew_frame_hint_name">姓名</string>
+    <string name="crew_frame_hint_position">职位</string>
+    <string name="crew_frame_hint_phone">电话号码</string>
+    <string name="crew_frame_hint_email">Email</string>
+    <string name="crew_frame_hint_addr">地址</string>
+
+<!--     鱼种信息 -->
+    <string name="fish_type_frame_hint_name">鱼种名称</string>
+    <string name="fish_type_frame_hint_level">等级</string>
+    <string name="fish_type_frame_hint_start_weight">分类重量起始值</string>
+    <string name="fish_type_frame_hint_end_weight">分类重量终止值</string>
+    <string name="fish_type_frame_hint_is_default">是否为默认鱼种</string>
+    
+<!--     捕捞类型 -->
+    <string name="catch_type_frame_hint_name">捕捞类型</string>
+    <string name="catch_type_frame_hint_pos_num">位置数量</string>
+    <string name="catch_type_frame_hint_max_num">最大记录数</string>
+    <string name="catch_type_frame_hint_is_default">是否为默认捕捞方式</string>
+    
+<!--     未捕捞原因 -->
+    <string name="uncatch_reason_frame_hint_cn">中文原因</string>
+    <string name="uncatch_reason_frame_hint_en">英文原因</string>
+
+<!--     港口 -->
+    <string name="port_frame_hint_cn">港口名称</string>
+    <string name="port_frame_hint_en">英文名称</string>
+    <string name="port_frame_hint_is_default">是否为常用港口</string>
+
+    
+    
+</resources>
